@@ -79,19 +79,19 @@ function scene:create(event)
             if not tableOfCoins[i] then
                 
             else
-                if ((tableOfCoins[i].y > 490 and tableOfCoins[i].x < 90) and tableOfCoins[i] ~= nil) then
+                if ((tableOfCoins[i].y > 420 and tableOfCoins[i].x < 90) and tableOfCoins[i] ~= nil) then
                     print("Area 1")
                     tableOfCoins[i]:removeSelf();
                     tableOfCoins[i] = nil;
                     totalMoney = totalMoney + (moneyPerCoin * 2.5);
                     moneyText.text = "Cash : $" .. totalMoney;
-                elseif ((tableOfCoins[i].y > 490 and (tableOfCoins[i].x > 90 and tableOfCoins[i].x < 240)) and tableOfCoins[i] ~= nil) then
+                elseif ((tableOfCoins[i].y > 420 and (tableOfCoins[i].x > 90 and tableOfCoins[i].x < 240)) and tableOfCoins[i] ~= nil) then
                     print("Area 2")
                     tableOfCoins[i]:removeSelf();
                     tableOfCoins[i] = nil;
                     totalMoney = totalMoney + (moneyPerCoin * 1.5);
                     moneyText.text = "Cash : $" .. totalMoney;
-                elseif ((tableOfCoins[i].y > 490 and (tableOfCoins[i].x > 240)) and tableOfCoins[i] ~= nil) then
+                elseif ((tableOfCoins[i].y > 420 and (tableOfCoins[i].x > 240)) and tableOfCoins[i] ~= nil) then
                     print("Area 3")
                     tableOfCoins[i]:removeSelf();
                     tableOfCoins[i] = nil;
